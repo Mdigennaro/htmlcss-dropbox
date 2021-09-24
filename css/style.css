@@ -25,22 +25,19 @@ h2{
   clear: both;
 }
 
-.left, .mid, .right, .image, .write{
+.left, .mid, .right, .image, .write, .professional, .standard, .advanced{
   float: left;
 }
 
 /*botton*/
 .btn{
   padding: 5px 10px;
-}
-
-.btn.blue{
-  background-color: #0061ff;
   color: white;
+  background-color: #0061ff;
 }
 
 .btn:hover{
-  background-color: lightblue;
+  background-color: lightskyblue
 }
 
 /*link*/
@@ -54,6 +51,11 @@ a{
   text-decoration: none;
   color: black;
 }
+
+.blue{
+  color:#0061ff
+}
+
 
 /*header*/
 header{
@@ -141,14 +143,64 @@ main .container{
  
 /*main option*/
 .option h2{
-
-}
-
-#circle{
-  color: #0061ff;
+  margin-bottom: 4%;
 }
 
 .option span{
-  margin-right: 2%;
+  margin: 0 2% 2% 0;
 }
+
+.standard{
+  margin: 0 5%
+}
+
+.professional, .standard, .advanced{
+  width: calc(90%/3);
+  min-height: 600px;
+  background-color: teal;
+  margin-top: 4%;
+ 
+}
+
+.utenti{
+  border: 1px solid #d0d0d3 ;
+  line-height: 8vh;
+  font-size: 14px;
+  text-align: center;
+}
+
+.offerta{
+  padding: 8%;
+  min-height: 200px;
+}
+
+.offerta h3, .offerta span{
+  margin-bottom: 5%;
+}
+
+.offerta strong{
+  font-size: 13px;
+}
+
+.offerta span:nth-of-type(2){
+  color: #d0d0d3;
+}
+
+.offerta span{
+  font-size: 11px;
+  display: block;
+  margin-bottom: 10%;
+}
+
+.offerta div{
+  margin: 20% auto 10% auto;
+  
+}
+
+.offerta span a{
+  text-decoration: underline;
+}
+
+
+
 
