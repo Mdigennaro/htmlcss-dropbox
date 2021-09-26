@@ -25,7 +25,7 @@ h2{
   clear: both;
 }
 
-.left, .mid, .right, .image, .write, .professional, .standard, .advanced, .descrizione, .contatto{
+.left, .mid, .right, .image, .write, .professional, .standard, .advanced, .descrizione, .contatto, .partner-img, .partner-txt, .row-left, .row-mid, .row-right, .collab-left, .collab-info, .collab-right{
   float: left;
 }
 
@@ -37,7 +37,14 @@ h2{
 }
 
 .btn:hover{
-  background-color: lightskyblue
+  background-color: #f5f5f5;
+  color: black;
+}
+
+.bianco{
+  background-color: white;
+  color: black;
+  border: 1px solid black;
 }
 
 /*link*/
@@ -58,6 +65,10 @@ a{
 
 .border{
   border-bottom: 1px solid #d0d0d3;
+}
+
+.underline{
+  text-decoration: underline;
 }
 
 /*header*/
@@ -178,7 +189,7 @@ main .container{
   padding: 8%;
 }
 
-.offerta h3, .offerta span{
+h3, .offerta span{
   margin-bottom: 3%;
 }
 
@@ -210,7 +221,7 @@ main .container{
 }
 
 .offerta-2{
-  border: 1px solid #d0d0d3;;
+  border: 1px solid #d0d0d3;
 }
 
 .descrizione{
@@ -244,4 +255,80 @@ main .container{
 
 .contatto div{
   margin-top: 10%;
+}
+
+/*main-partner*/
+.partner-img{
+  width: 55%;
+}
+
+.partner-txt{
+  width: 45%;
+  padding: 5% 0 0 5%;
+}
+
+.partner-img img{
+  width: 100%;
+}
+
+.partner-txt, .partner-img{
+  margin-top: 15%;
+}
+
+.partner-txt span{
+  font-size: 13px;
+}
+
+.partner-txt div{
+  margin-top: 6%;
+}
+
+/*main-operazioni*/
+.operazioni{
+  width: 100%;
+  margin-top: 10%;
+}
+
+.row-mid{
+  margin: 0 5%;
+}
+
+.row-left, .row-mid, .row-right{
+  width: 30%;
+  min-height: 400px;
+  margin-top: 5%;
+}
+
+.row-left img, .row-mid img, .row-right img{
+  width: 100%;
+  margin-bottom: 3%;
+}
+
+.row-left span, .row-mid span, .row-right span{
+  font-size: 13px;
+}
+
+/*correlazione*/
+.box-1{
+  width: 59%;
+  margin-top: 10%;
+  min-height: 200px;
+  margin-bottom: 20%;
+}
+
+.box-1 h2{
+  font-size: 33px;
+  margin-bottom: 4%;
+}
+
+.box-1 span a{
+  text-decoration: underline;
+  color: blue;
+}
+
+/*collaborazioni*/
+.collab-left, .collab-info, .collab-right{
+  width: calc(100%/3);
+  min-height: 500px;
+  background-color: red;
 }
