@@ -24,7 +24,7 @@ h2{
   clear: both;
 }
 
-.left, .mid, .right, .image, .write, .professional, .standard, .advanced, .descrizione, .contatto, .partner-img, .partner-txt, .row-left, .row-mid, .row-right, .left-box, .mid-box, .right-box{
+.left, .mid, .right, .image, .write, .professional, .standard, .advanced, .descrizione, .contatto, .partner-img, .partner-txt, .row-left, .row-mid, .row-right, .left-box, .mid-box, .right-box, .txt, .prova{
   float: left;
 }
 
@@ -228,7 +228,7 @@ h3, .offerta span{
 
 .descrizione{
   width: 75%;
-  border-left: 1px solid #d0d0d3;;
+  border-left: 1px solid #d0d0d3;
 }
 
 .contatto{
@@ -350,7 +350,7 @@ h3, .offerta span{
   background-color: green;
 }
 
-.box-2 img{
+.left-box img, .right-box img{
   position: absolute;
   width: 50%;
   top: 50%;
@@ -404,3 +404,66 @@ h3, .offerta span{
   opacity: 0.5;
   border: 5px solid #f5f5f5;
 }
+
+.mid-box img{
+  padding: 5%;
+  width: 30%;
+}
+
+.mid-box div{
+  position: relative;
+  width: 7%;
+  left: 5%;
+  background-color: #d0d0d3;
+}
+
+.mid-box p, .mid-box span{
+  padding: 5%;
+  font-size: 15px;
+}
+
+/*prova gratuita*/
+.prova-gratis{
+  background-color: #b4d0e7;
+  height: 40vh;
+  margin-bottom: 5%;
+}
+
+.txt, .prova{
+  width: 50%;
+}
+
+.txt h2{
+  padding-top: 25%;
+  color: #61082c;
+  font-weight: bold;
+}
+
+.prova div{
+  padding: 25% 0 0 25%;
+}
+
+.prova a{
+  padding: 2% 10%;
+  border: none;
+}
+
+/*domande frequenti*/
+.domande h2{
+  padding-bottom: 4%;
+  border-bottom: 1px solid #d0d0d3;
+}
+
+.domande div{
+  border-bottom: 1px solid #d0d0d3;
+  padding: 4% 0;
+}
+
+.domande span{
+  padding-right: 19%;
+  font-weight: bold;
+}
+
+
+
+
