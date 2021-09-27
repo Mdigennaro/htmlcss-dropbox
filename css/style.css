@@ -10,7 +10,6 @@ body{
 
 .container{
   width: 70%;
-  min-height: 400px;
   margin: auto;
 }
 
@@ -25,7 +24,7 @@ h2{
   clear: both;
 }
 
-.left, .mid, .right, .image, .write, .professional, .standard, .advanced, .descrizione, .contatto, .partner-img, .partner-txt, .row-left, .row-mid, .row-right, .collab-left, .collab-info, .collab-right{
+.left, .mid, .right, .image, .write, .professional, .standard, .advanced, .descrizione, .contatto, .partner-img, .partner-txt, .row-left, .row-mid, .row-right, .left-box, .mid-box, .right-box{
   float: left;
 }
 
@@ -151,7 +150,6 @@ margin-bottom: 7%;
 /*main*/
 main .container{
   width: 55%;
-  height: 900px;
 }
  
 .fatturazione{
@@ -160,11 +158,11 @@ main .container{
 
 /*main option*/
 .option h2{
-  margin-bottom: 4%;
+  padding-bottom: 4%;
 }
 
 .option span{
-  margin: 0 2% 2% 0;
+  padding: 0 2% 2% 0;
 }
 
 .standard{
@@ -221,6 +219,10 @@ h3, .offerta span{
 }
 
 .offerta-2{
+  width: 100%;
+}
+
+.offerta-2{
   border: 1px solid #d0d0d3;
 }
 
@@ -241,7 +243,7 @@ h3, .offerta span{
 }
 
 .offerta-2 h3{
-  margin-top: 3%;
+  padding-top: 3%;
 }
 
 .descrizione div{
@@ -254,7 +256,7 @@ h3, .offerta span{
 }
 
 .contatto div{
-  margin-top: 10%;
+  padding-top: 10%;
 }
 
 /*main-partner*/
@@ -272,7 +274,7 @@ h3, .offerta span{
 }
 
 .partner-txt, .partner-img{
-  margin-top: 15%;
+  padding-top: 15%;
 }
 
 .partner-txt span{
@@ -280,13 +282,13 @@ h3, .offerta span{
 }
 
 .partner-txt div{
-  margin-top: 6%;
+  padding-top: 6%;
 }
 
 /*main-operazioni*/
 .operazioni{
   width: 100%;
-  margin-top: 10%;
+  padding-top: 5%;
 }
 
 .row-mid{
@@ -311,14 +313,11 @@ h3, .offerta span{
 /*correlazione*/
 .box-1{
   width: 59%;
-  margin-top: 10%;
-  min-height: 200px;
-  margin-bottom: 20%;
+  padding: 10% 0 5% 0;
 }
 
 .box-1 h2{
   font-size: 33px;
-  margin-bottom: 4%;
 }
 
 .box-1 span a{
@@ -327,8 +326,81 @@ h3, .offerta span{
 }
 
 /*collaborazioni*/
-.collab-left, .collab-info, .collab-right{
-  width: calc(100%/3);
-  min-height: 500px;
-  background-color: red;
+
+.box-2{
+  width: 100vw;
+}
+
+.mid-box{
+  width: 40vw;
+  min-height: 60vh;
+  background-color: #f5f5f5;
+}
+
+.left-box, .right-box{
+  position: relative;
+  width: 30vw;
+  min-height: 60vh;
+}
+
+.cubo-tl{
+  position: absolute;
+  width: 50%;
+  height: 50%;
+  background-color: green;
+}
+
+.box-2 img{
+  position: absolute;
+  width: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  filter: invert(1);
+}
+
+.cubo-tr{
+  position: absolute;
+  right: 0;
+  width: 50%;
+  height: 50%;
+  background-color: #61082c;
+}
+
+.cubo-bl{
+  position: absolute;
+  bottom: 0px;
+  width: 50%;
+  height: 50%;
+  background-color: #1d93ce;
+}
+
+.cubo-br{
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  width: 50%;
+  height: 50%;
+  background-color: #f91c1d;
+}
+
+.right-box .cubo-tl{
+  background-color: #d5021f;
+}
+
+.right-box .cubo-tr{
+  background-color: #b4d0e7;
+}
+
+.right-box .cubo-bl{
+  background-color: #0d2481;
+}
+
+.right-box .cubo-br{
+  background-color: #fed830;
+}
+
+.cubo-tl:hover, .cubo-tr:hover, .cubo-bl:hover, .cubo-br:hover{
+  opacity: 0.5;
+  border: 5px solid #f5f5f5;
 }
