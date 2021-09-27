@@ -24,7 +24,7 @@ h2{
   clear: both;
 }
 
-.left, .mid, .right, .image, .write, .professional, .standard, .advanced, .descrizione, .contatto, .partner-img, .partner-txt, .row-left, .row-mid, .row-right, .left-box, .mid-box, .right-box, .txt, .prova{
+.left, .mid, .right, .image, .write, .professional, .standard, .advanced, .descrizione, .contatto, .partner-img, .partner-txt, .row-left, .row-mid, .row-right, .left-box, .mid-box, .right-box, .txt, .prova, .dropbox, .prodotti, .azienda, .supporto, .community{
   float: left;
 }
 
@@ -79,6 +79,7 @@ header{
   background-color: white;
   font-size: 13px;
   line-height: 57px;
+  z-index: 20;
 }
 
 .left{
@@ -457,12 +458,71 @@ h3, .offerta span{
 .domande div{
   border-bottom: 1px solid #d0d0d3;
   padding: 4% 0;
+  cursor: pointer;
 }
 
 .domande span{
   padding-right: 19%;
   font-weight: bold;
 }
+
+.domande div:last-of-type{
+  margin-bottom: 10%;
+}
+
+.domande p{
+  display: none;
+  color: #d0d0d3;
+  padding-top: 5%;
+}
+
+.domande i:hover + p{
+  display: block;
+}
+
+/*footer*/
+footer{
+  background-color: black;
+  min-height: 300px;
+  color: white;
+}
+
+.foot{
+  width: 80%;
+  min-height: 200px;
+  margin: auto;
+}
+
+.dropbox, .prodotti, .azienda, .supporto, .community{
+  width: calc(100%/5);
+  min-height: 100px;
+  padding-top: 5%;
+}
+
+.foot nav ul li{
+  display: block;
+  font-size: 13px;
+  padding-bottom: 2%;
+}
+
+.foot nav ul li:first-of-type{
+  font-size: 18px;
+  font-weight: bold;
+  padding-bottom: 4%;
+}
+
+.foot a{
+  color: white;
+}
+
+.foot .dropbox nav li:last-of-type{
+  font-size: 11px;
+  color: #d0d0d3;
+  border-top: 1px solid #d0d0d3;
+  margin-top: 25%;
+  padding-top: 10%;
+} 
+
 
 
 
